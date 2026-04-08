@@ -1,0 +1,475 @@
+@charset 'UTF-8';
+
+
+
+
+
+/*
+トップページのスタイル
+*/
+
+
+
+
+.p-top__hero {
+  width: 95vw;
+  position: relative;
+  height: 49.6rem;
+  /* margin-inline: auto; */
+  width: 100%;
+}
+
+
+
+.p-top__hero picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.p-top__hero picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+
+.p-top__greeting {
+  position: absolute;
+  left: 2.4rem;
+  /* top: 40.9rem; */
+  top: 37rem;
+  z-index: 10;
+}
+
+
+.p-top__greeting p {
+  color: var(--white);
+  /* opacity: 80%; */
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  letter-spacing: 0.05em;
+  display: block;
+  filter: drop-shadow(0rem 0rem 2rem rgba(50, 26, 0, 2));
+
+}
+
+.p-top__greeting h3 {
+  font-family: "Zen Kaku Gothic Antique";
+  color: var(--white);
+  /* opacity: 80%; */
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  padding-bottom: 0.5em; /* 念のため下に少しだけ余白を作る */
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  display: block;
+  filter: drop-shadow(0rem 0rem 2rem rgba(50, 26, 0, 2));
+
+  /* text-transform: uppercase; */
+}
+
+/* タイピングアニメーション */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .1em solid var(--accent-color);
+  width: 0;
+  
+  /* typing: 0から100%まで幅を広げ、戻す動きを入れる
+     blink: カーソルの点滅
+  */
+  animation: 
+    typing 6s steps(20, end) infinite,
+    blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  0%, 10% { width: 0; }             /* 溜め（開始） */
+  40%, 60% { width: 100%; }         /* 書いた状態で停止（見せる時間） */
+  90%, 100% { width: 0; }           /* 消す動き */
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+
+
+.p-top__hero img {
+  width: 100%;
+  display: block;
+  /* これを追加：画像の下の隙間を消し、幅一杯に広げやすくします */
+  height: auto;
+  /* border-radius: 3rem; */
+  /* border-bottom-right-radius: 5rem; */
+}
+
+.p-topAbout {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2.4rem;
+
+}
+
+.p-topAbout__content {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin-block: 2rem 2.4rem;
+}
+
+.p-topAbout__imgs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.p-topAbout__imgs img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  /* filter: sepia(0.5) contrast(1.2) brightness(0.9) saturate(0.8); */
+}
+
+.p-topAbout__imgs img:not(:first-child) {
+  display: none;
+}
+
+
+
+/* ニュース */
+.p-topNews {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2.4rem;
+  width: 100%;
+
+  padding-block: 4rem 6rem;
+}
+
+.p-topNews-newsList {
+  margin-block: 2.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 103.2rem;
+}
+
+/* .c-headingNews span{
+  color: var(--white);
+} */
+
+/* パララックス */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 50dvh; */
+  /* 画面の半分 */
+}
+
+.content-section1 {
+  background-color: #555;
+  min-height: 60dvh;
+  font-size: 5rem;
+}
+
+.img-section-01 {
+  background-image: url('/img/About_latte.png');
+       /* background-image: url('/img/Pattern__new0433_m_new04333.svg');
+    background-repeat: repeat;
+    background-size: 10rem auto; */
+  /* background-color: rgba(255, 255, 255, 0.5); 
+  background-blend-mode: lighten; 
+  background-size: cover; */
+}
+
+
+
+
+/* 商品紹介 */
+
+.p-topItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--base-color);
+  padding-block: 4rem 10rem;
+}
+
+.p-topItems__cards {
+  margin-top: 2.4rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.p-topItems__cardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.p-topItems__orders {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.c-SubBtnSp--icon:nth-child(2)::before {
+  mask-image: url(../img/Icon_cart.svg);
+}
+
+.p-topItems__img {
+  /* max-width: 60rem; */
+  width: 100%;
+  height: 26.5rem;
+}
+
+.p-topItems__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* モーダル */
+
+.l-modalDetail {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  /* 💡 初期状態は非表示 */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+/* 表示された時用のクラス */
+.l-modalDetail.is-active {
+  /* display: flex; */
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* 白い箱のサイズと色 */
+.l-modalDetail__inner {
+  width: auto;
+  max-height: 80vh;
+  position: relative;
+  overflow-y: auto;
+  margin-inline: auto;
+}
+
+/* 閉じるボタン */
+.l-modalDetail__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5.6rem;
+  height: 5.6rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* // 【SP】閉じるボタン中身 */
+.l-modalDetail__close::before,
+.l-modalDetail__close::after {
+  content: '';
+  width: 2.25rem;
+  height: 0.25rem;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+.l-modalDetail__close::before {
+  rotate: 45deg;
+}
+
+.l-modalDetail__close::after {
+  rotate: -45deg;
+}
+
+@media screen and (min-width:76.8rem) {
+  .l-modalDetail__inner {
+    max-height: 85vh;
+    overflow-y: visible;
+  }
+}
+
+
+
+
+@media screen and (min-width:76.8rem) {
+
+  
+
+
+
+
+  .p-top__hero {
+    height: 55rem;
+    /* height: 75rem; */
+
+    /* display: grid;
+    grid-template-areas: "main";
+    align-items: start; */
+  }
+
+  /* .p-top__hero picture {
+    grid-area: main;
+    z-index: 1;
+  } */
+
+
+  .p-top__greeting {
+    /* position: sticky; */
+    left: 5rem;
+    /* margin-left: 5rem; */
+    /* top: 43rem; */
+    top: 40rem;
+
+
+    /* grid-area: main; */
+    /* 画像の上へ */
+    /* Stickyの設定 */
+    /* position: -webkit-sticky; */
+    /* Safariなどの古い/特定のエンジン用 */
+    /* position: sticky; */
+  }
+
+  .p-top__greeting p {
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .p-top__greeting h3 {
+    color: var(--white);
+    /* opacity: 80%; */
+    font-size: 2.6rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.05em;
+    margin-top: 1.3rem;
+
+  }
+
+  .p-topAbout {
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+    padding-inline: 2.4rem;
+  }
+
+  .p-topAbout__content {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    margin-block: 4rem;
+  }
+
+  .p-topAbout__imgs {
+    display: flex;
+    gap: 4rem;
+    max-width: 103.2rem;
+    margin-top: 4rem;
+  }
+
+  .p-topAbout__imgs img {
+    height: 18.8rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .p-topAbout__imgs img:not(:first-child) {
+    display: block;
+  }
+
+  .p-topNews {
+    padding-block: 8rem 12rem;
+    padding-inline: 2.4rem;
+    /* background-color: var(--base-color); */
+  }
+
+  .p-topNews-newsList {
+    margin-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+
+
+
+
+
+  .p-topItems {
+    padding-inline: 2.4rem;
+    padding-block: 8rem 14rem;
+    background-color: transparent;
+
+  }
+
+  .p-topItems__cards {
+    margin-block: 6rem 8rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3.6rem;
+  }
+
+  .p-topItems__cardItem {
+    gap: 2rem;
+  }
+
+  .p-topItems__orders {
+    display: flex;
+    flex-direction: row;
+    gap: 6.4rem;
+  }
+
+  .p-topItems__img {
+    /* max-width: 60rem; */
+    width: 100%;
+    height: 40.5rem;
+  }
+
+  .p-topItems__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+}

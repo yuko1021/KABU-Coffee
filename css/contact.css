@@ -1,0 +1,331 @@
+@charset 'UTF-8';
+
+.p-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.p-contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 4rem 3rem;
+    background-color: var(--white);
+    margin-block: 2.4rem 3.2rem;
+    width: 100%;
+}
+
+.p-contact__formGroup {
+    width: 100%;
+}
+
+.p-contact__formGroup dt {
+    font-size: 1.6rem;
+}
+
+.p-contact__formGroup dd {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.p-contact__formGroup dd input {
+    width: 100%;
+    height: 4.8rem;
+    font-size: 1.6rem;
+    padding-inline: 1.6rem;
+    opacity: 60%;
+
+}
+
+.p-contact__formGroup dd textarea {
+    width: 100%;
+    height: 12rem;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    opacity: 60%;
+}
+
+.p-contact__formLabel {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.p-contact__address {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.p-contact__address input {
+    opacity: 60%;
+}
+
+.p-contact__zipArea {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    width: 80%;
+}
+
+.p-contactFrom__beans {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.p-contactFrom__beansTitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.p-contactFrom__beansSelect {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    /* gap: 0.8; */
+}
+
+.p-contactFrom__beansSelect p {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.selected-bean-item:last-child {
+    margin-bottom: 1.4rem;
+}
+
+
+.p-contactFrom__beansButton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+
+/* モーダル全体（背景） */
+.l-modalBeans {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 背景を暗く */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* 表示された時用のクラス */
+.l-modalBeans.is-open {
+    display: flex;
+}
+
+/* 白い箱のサイズと色 */
+.l-modalBeans__inner {
+    background-color: var(--base-color);
+    width: 100%;
+    max-width: 34.5rem;
+    /* ここでサイズを変更できます */
+    max-height: 80vh;
+    padding-block: 5rem 4rem;
+    position: relative;
+    overflow-y: auto;
+    /* 中身が長いとスクロール */
+}
+
+.l-modalBeans__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l-modalBeans__lists {
+    margin-block: 3.2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.l-modalBeans__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* 閉じるボタン */
+.l-modalBeans__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5.6rem;
+    height: 5.6rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* // 【SP】閉じるボタン中身 */
+.l-modalBeans__close::before,
+.l-modalBeans__close::after {
+    content: '';
+    width: 2.25rem;
+    height: 0.25rem;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.l-modalBeans__close::before {
+    rotate: 45deg;
+}
+
+.l-modalBeans__close::after {
+    rotate: -45deg;
+}
+
+.l-modalBeans__list.is-active .l-modalBeans__card {
+    outline: solid 0.2rem var(--accent-color);
+}
+
+.l-modalBeans__list.is-active .l-modalBeans__cardButton {
+    background-color: var(--accent-color);
+
+}
+
+.selected-bean-item {
+    font-size: 1.6rem;
+    color: var(--accent-color);
+}
+
+.p-contact__send {
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:76.8rem) {
+    .p-contact__form {
+        gap: 2.4rem;
+        /* padding: 6rem 17.8rem; */
+        padding-block: 6rem;
+        margin-block: 4rem;
+        max-width: 103.2rem;
+    }
+
+    .p-contact__formGroup {
+        display: flex;
+        gap: 0.8rem;
+        max-width: 67.7rem;
+    }
+
+    .p-contact__formGroup dd {
+        width: auto;
+        margin-top: 0;
+        flex: 1;
+    }
+
+    .p-contact__formGroup dd input {
+        height: 4.4rem;
+        width: 100%;
+    }
+
+    .p-contact__formGroup dd textarea {
+        height: 22rem;
+    }
+
+
+    .p-contact__formLabel {
+        gap: 0;
+        justify-content: space-between;
+        min-width: 18rem;
+    }
+
+    .p-contactFrom__beans {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .p-contactFrom__beansButton {
+        display: block;
+        width: auto;
+    }
+
+
+    .p-contact__address {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .p-contact__address input {
+        opacity: 60%;
+    }
+
+    .p-contact__zipArea {
+        width: 50%;
+    }
+
+
+
+    /* モーダル全体（背景） */
+    .l-modalBeans {
+        padding: 2rem;
+    }
+
+
+    /* 表示された時用のクラス */
+    .l-modalBeans.is-open {
+        display: flex;
+    }
+
+    /* 白い箱のサイズと色 */
+    .l-modalBeans__inner {
+        max-width: 103.2rem;
+        max-height: 100vh;
+        padding-block: 5rem 4rem;
+        padding-inline: 4rem;
+    }
+
+    .l-modalBeans__content h2 {
+        display: none;
+    }
+
+    .l-modalBeans__lists {
+        margin-block: 0 2.4rem;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.4rem;
+    }
+
+    .l-modalBeans__list {
+        gap: 1.2rem;
+    }
+
+
+
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KABU Coffee</title>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=LINE+Seed+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="l-header">
+        <!-- logo -->
+        <h1 class="l-header__logo">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav.svg">
+                    <img src="img/logo_nav_2line.svg" alt="Kabu Coffee logo">
+                </picture>
+            </a>
+        </h1>
+
+        <!-- 【SP】ハンバーガーメニューボタン -->
+        <button class="l-header__navBtn" type="button">
+            <span></span>
+        </button>
+
+        <!-- ナビゲーション -->
+        <nav class="l-header__nav">
+            <!-- 【SP】クローズボタン -->
+            <button class="l-header__navClose" type="button"></button>
+            <ul class="l-header__navList">
+                <li class="l-header__navItem"><a href="index.html">Home</a></li>
+                <li class="l-header__navItem"><a href="beans.html">Beans</a></li>
+                <li class="l-header__navItem"><a href="about.html">About</a></li>
+                <li class="l-header__navItem"><a href="contact.html">Contact</a></li>
+                 <li class="l-header__navItem"><a href="https://kabucoffee.base.shop/">Store</a></li>
+                <li class="l-header__navItem">
+                    <a href="store.html" class="l-header__navLink l-header__instagram">Instagram</a>
+                </li>
+            </ul>
+            <p class="l-header__navLogo">
+                <img src="img/logo_nav_2line.svg" alt="KABU logo">
+            </p>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="p-top__hero">
+            <div class="p-top__greeting">
+                <p id="p-top__greeting">
+                    ほんの数分でも日常にゆとりと彩りを。<br>そんな時間を創りだす<br>自家焙煎スペシャルティコーヒーショップです。
+                </p>
+                <h3 class="typing">Coffee for your peace of mind.</h3>
+            </div>
+            <picture class="p-top__pic">
+                <source media="(min-width: 76.8rem)" srcset="img/Top_man_portrait_PC.jpg">
+                <img src="img/Top_man_portrait.jpg" alt="男性のポートレート">
+            </picture>
+        </section>
+
+        <!-- <section class="p-topAbout">
+    
+            <div class="parallax-section img-section-01">
+                <h2 class="c-headingSp c-headingPc">
+                    <span class="c-headingSp__title c-headingPc__title">About Kabu</span>
+                    <span class="c-headingSp__subTitle c-headingPc__subTitle">カブコーヒーについて</span>
+                </h2>
+                <p class="p-topAbout__content">
+                    はじめまして。店舗を持たず個人で豆の焙煎をするKABU Coffeeです。<br>
+                    ご自宅でおいしいコーヒーを楽しみたい方や<br>
+                    ご自身のお店で提供したい方、サンプルの発送も行なっておりますので、<br>
+                    ぜひ一度味わってみて下さい。
+                </p>
+                <a href="#" class="c-viewBtn c-viewBtn--pc">view more</a>
+            </div>
+        </section> -->
+
+        <section class="p-topAbout">
+            <h2 class="c-headingSp c-headingPc">
+                <span class="c-headingSp__title c-headingPc__title">About Kabu</span>
+                <span class="c-headingSp__subTitle c-headingPc__subTitle">カブコーヒーについて</span>
+            </h2>
+            <p class="p-topAbout__content">
+                はじめまして。店舗を持たず個人で豆の焙煎をするKABU Coffeeです。<br>
+                ご自宅でおいしいコーヒーを楽しみたい方や<br>
+                ご自身のお店で提供したい方、サンプルの発送も行なっておりますので、<br>
+                ぜひ一度味わってみて下さい。
+            </p>
+            <a href="#" class="c-viewBtn c-viewBtn--pc">view more</a>
+
+            <div class="p-topAbout__imgs">
+                <img src="img/About_package.png" alt="コーヒー豆のパッケージ">
+                <img src="img/About_ roasting.png" alt="豆の焙煎の様子">
+                <img src="img/About_latte.png" alt="ラテアートの様子">
+            </div>
+
+        </section>
+
+
+        <section class="p-topNews parallax-section img-section-01">
+            <h2 class="c-headingSp c-headingPc c-headingNews">
+                <span class="c-headingSp__title c-headingPc__title">News</span>
+                <span class="c-headingSp__subTitle c-headingPc__subTitle">イベント参加情報、その他お知らせを掲載します。</span>
+            </h2>
+            <div class="p-topNews-newsList">
+                <div class="c-news c-news--Pc is-show js-news">
+                    <div class="c-newsSwitch">
+                        <button class="js-switch-btn"></button>
+                    </div>
+                    <div class="c-news__left c-news__leftPc">
+                        <div class="c-news__badges">
+                            <a href="#" class="c-badge">イベント</a>
+                            <a href="#" class="c-badge c-badge--orange">new</a>
+                        </div>
+                        <p class="c-news__Date">2026.3/3</p>
+                    </div>
+                    <div class="c-news__right c-news__rightPc">
+                        <h3 class="c-news__Title c-news__titlePc">ABC COFFEE FESTIVAL出店決定!</h3>
+                        <p class="c-news__Content c-news__contentPc">4月11日・12日に開催されるコーヒーのイベント、「ABC COFFEE
+                            FESTIVAL」に出店致します。当…
+                        </p>
+                    </div>
+                </div>
+                <div class="c-newsOpen is-hide js-newsOpen">
+                    <button class="c-newsClose" type="button"></button>
+                    <div class="p-newsOpen__Top">
+                        <div class="c-news__badges">
+                            <a href="#" class="c-badge">イベント</a>
+                            <a href="#" class="c-badge c-badge--orange">new</a>
+                        </div>
+                        <p class="c-news__Date">2026.3/3</p>
+                    </div>
+                    <div class="c-c-newsOpen__Content">
+                        <h3 class="c-news__Title c-news__titlePc">ABC COFFEE FESTIVAL出店決定!</h3>
+                        <p>4月11日・12日に開催されるコーヒーのイベント、「ABC COFFEE
+                            FESTIVAL」に出店致します。当日は、当店自慢の自家焙煎豆を使用したハンドドリップコーヒーをご用意してお待ちしております。普段はオンラインショップや卸売がメインのため、皆様に直接お会いできるこの機会をとても楽しみにしております。
+                            会場では、イベント限定のオリジナルブレンドや、ご自宅でも手軽に楽しめるコーヒーバッグも販売予定です。春の心地よい空気の中で、こだわりの一杯をぜひ味わいに来てください！
+                        </p>
+                    </div>
+                    <div class="c-newsOpen__img">
+                        <img src="img/News_beans.png" alt="珈琲豆">
+                    </div>
+                    <a href="#" class="c-SubBtnSp c-newsCloseButton">close</a>
+
+                </div>
+
+                <div class="c-news c-news--Pc is-show js-news">
+                    <div class="c-newsSwitch">
+                        <button class="js-switch-btn"></button>
+                    </div>
+                    <div class="c-news__left c-news__leftPc">
+                        <div class="c-news__badges">
+                            <a href="#" class="c-badge">イベント</a>
+                            <a href="#" class="c-badge c-badge--orange">new</a>
+                        </div>
+                        <p class="c-news__Date">2026.3/3</p>
+                    </div>
+                    <div class="c-news__right c-news__rightPc">
+                        <h3 class="c-news__Title c-news__titlePc">ABC COFFEE FESTIVAL出店決定!</h3>
+                        <p class="c-news__Content c-news__contentPc">4月11日・12日に開催されるコーヒーのイベント、「ABC COFFEE
+                            FESTIVAL」に出店致します。当…
+                        </p>
+                    </div>
+                </div>
+                <div class="c-newsOpen is-hide js-newsOpen">
+                    <button class="c-newsClose" type="button"></button>
+                    <div class="p-newsOpen__Top">
+                        <div class="c-news__badges">
+                            <a href="#" class="c-badge">イベント</a>
+                            <a href="#" class="c-badge c-badge--orange">new</a>
+                        </div>
+                        <p class="c-news__Date">2026.3/3</p>
+                    </div>
+                    <div class="c-c-newsOpen__Content">
+                        <h3 class="c-news__Title c-news__titlePc">ABC COFFEE FESTIVAL出店決定!</h3>
+                        <p>4月11日・12日に開催されるコーヒーのイベント、「ABC COFFEE
+                            FESTIVAL」に出店致します。当日は、当店自慢の自家焙煎豆を使用したハンドドリップコーヒーをご用意してお待ちしております。普段はオンラインショップや卸売がメインのため、皆様に直接お会いできるこの機会をとても楽しみにしております。
+                            会場では、イベント限定のオリジナルブレンドや、ご自宅でも手軽に楽しめるコーヒーバッグも販売予定です。春の心地よい空気の中で、こだわりの一杯をぜひ味わいに来てください！
+                        </p>
+                    </div>
+                    <div class="c-newsOpen__img">
+                        <img src="img/News_beans.png" alt="珈琲豆">
+                    </div>
+                    <a href="#" class="c-SubBtnSp c-newsCloseButton">close</a>
+
+                </div>
+            </div>
+            <a href="news.html" class="c-viewBtn c-viewBtn--pc">view more</a>
+        </section>
+
+
+        <section class="p-topItems">
+            <h2 class="c-headingSp c-headingPc">
+                <span class="c-headingSp__title c-headingPc__title">Items</span>
+                <span class="c-headingSp__subTitle c-headingPc__subTitle">取り扱い商品の紹介</span>
+            </h2>
+
+            <div class="p-topItems__cards">
+                <div class=" p-topItems__cardItem">
+                    <div class="c-photoCard">
+                        <div class="c-photoCard__badge c-photoCard__badge--pc">
+                            <p>Light<br>Roast</p>
+                        </div>
+                        <div class="  c-photoCard__img">
+                            <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                        </div>
+                        <div class="c-photoCard__title c-photoCard__title--pc">
+                            <h2 class="c-photoCard__mainTitle c-photoCard__mainTitle--pc">Ethiopia</h2>
+                            <h3 class="c-photoCard__subTitleEn  c-photoCard__subTitleEn--pc">Worka SakaroWashed</h3>
+                            <h3 class="c-photoCard__subTitleJa  c-photoCard__subTitleJa--pc">エチオピア ウォッシュト</h3>
+                        </div>
+                        <div class="c-photoCard__flavors">
+                            <div class="c-photoCard__flavor">
+                                <p>Lemon</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Tea-like</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Floral</p>
+                            </div>
+                        </div>
+                        <div class="c-photoCard__content">
+                            <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。</p>
+                        </div>
+                        <p class="c-photoCard__weight">100g/200g</p>
+                    </div>
+                    <a href="#" class="c-btn c-btn--Pc" id="js-modal-open">商品詳細</a>
+                </div>
+
+                <div class=" p-topItems__cardItem">
+                    <div class="c-photoCard">
+                        <div class="c-photoCard__badge c-photoCard__badge--pc">
+                            <p>Light<br>Roast</p>
+                        </div>
+                        <div class="  c-photoCard__img">
+                            <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                        </div>
+                        <div class="c-photoCard__title c-photoCard__title--pc">
+                            <h2 class="c-photoCard__mainTitle c-photoCard__mainTitle--pc">Ethiopia</h2>
+                            <h3 class="c-photoCard__subTitleEn  c-photoCard__subTitleEn--pc">Worka SakaroWashed</h3>
+                            <h3 class="c-photoCard__subTitleJa  c-photoCard__subTitleJa--pc">エチオピア ウォッシュト</h3>
+                        </div>
+                        <div class="c-photoCard__flavors">
+                            <div class="c-photoCard__flavor">
+                                <p>Lemon</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Tea-like</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Floral</p>
+                            </div>
+                        </div>
+                        <div class="c-photoCard__content">
+                            <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。</p>
+                        </div>
+                        <p class="c-photoCard__weight">100g/200g</p>
+                    </div>
+                    <a href="#" class="c-btn c-btn--Pc" id="js-modal-open">商品詳細</a>
+                </div>
+
+                <div class=" p-topItems__cardItem">
+                    <div class="c-photoCard">
+                        <div class="c-photoCard__badge c-photoCard__badge--pc">
+                            <p>Light<br>Roast</p>
+                        </div>
+                        <div class="  c-photoCard__img">
+                            <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                        </div>
+                        <div class="c-photoCard__title c-photoCard__title--pc">
+                            <h2 class="c-photoCard__mainTitle c-photoCard__mainTitle--pc">Ethiopia</h2>
+                            <h3 class="c-photoCard__subTitleEn  c-photoCard__subTitleEn--pc">Worka SakaroWashed</h3>
+                            <h3 class="c-photoCard__subTitleJa  c-photoCard__subTitleJa--pc">エチオピア ウォッシュト</h3>
+                        </div>
+                        <div class="c-photoCard__flavors">
+                            <div class="c-photoCard__flavor">
+                                <p>Lemon</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Tea-like</p>
+                            </div>
+                            <div class="c-photoCard__flavor">
+                                <p>Floral</p>
+                            </div>
+                        </div>
+                        <div class="c-photoCard__content">
+                            <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。</p>
+                        </div>
+                        <p class="c-photoCard__weight">100g/200g</p>
+                    </div>
+                    <a href="#" class="c-btn c-btn--Pc" id="js-modal-open">商品詳細</a>
+
+                </div>
+            </div>
+
+            <div class="p-topItems__orders">
+                <a href="contact.html" class="c-SubBtnSp--icon c-SubBtnPc">sample</a>
+                <a href="https://kabucoffee.base.shop/" class="c-SubBtnSp--icon c-SubBtnPc">Buy Beans</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="p-topItems__img">
+        <img src="img/Footer_field.jpg" alt="コーヒー畑の様子">
+    </div>
+
+    <footer class="l-footer">
+
+        <div class="l-footer__content">
+            <div class="l-footer__logo">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav_2line.svg">
+                    <img src="img/logo_nav.svg" alt="Kabu Coffee logo">
+                </picture>
+            </div>
+            <nav class="l-footer__nav">
+                <dl class="l-footer__navList">
+                    <dt><a href="index.html">Home</a></dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Information</a></dd>
+                    <dd><a href="#">Beans</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="beans.html">Beans</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="about.html">About</a></dt>
+                    <dd><a href="#">Commitment</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="contact.html">Contact</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="store.html">Store</a></dt>
+                </dl>
+                <div class="l-footer__contact">
+                    <div>
+                        <p class="l-footer__contactTitle">お問い合わせ</p>
+                        <ul class="l-footer__contactDetail">
+                            <li><a href="#">address</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <small class="l-footer__copyright">
+            Copyright &copy; KABU coffee.
+        </small>
+    </footer>
+
+
+    <!-- サークルのアニメーション -->
+    <div class="c-circle-text">
+        <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+            <text>
+                <textPath href="#circlePath">
+                    STORE・STORE・STORE・STORE・
+                </textPath>
+            </text>
+        </svg>
+        <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+            <text>
+                <textPath href="#circlePath">
+                    CONTACT・CONTACT・CONTACT・
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <!-- 問い合わせとカートボタン -->
+    <div class="c-sticky-nav">
+        <a href="https://kabucoffee.base.shop/" class="c-icon-btn">
+            <img src="img/icon_cart.svg" alt="カート" class="c-icon-btn__img">
+        </a>
+        <a href="contact.html" class="c-icon-btn">
+            <img src="img/Icon_tabler_mail-filled.svg" alt="お問い合わせ" class="c-icon-btn__img">
+        </a>
+    </div>
+
+
+    <!-- モーダル -->
+    <div class="l-modalDetail" id="js-modalDetail">
+        <div class="l-modalDetail__inner">
+            <button class="l-modalDetail__close" id="js-modalDetail-close" type="button"></button>
+            <div class="c-productCard--detail c-productCard--detailPc">
+                <div class="c-productCard__badge c-photoCard__detailBadge">
+                    <p>Light Roast</p>
+                </div>
+                <div class="c-productCard--detailTop">
+                    <div class="c-productCard__title c-productCard__titlePc">
+                        <h2 class="c-productCard__mainTitle c-productCard__mainTitlePc">Ethiopia</h2>
+                        <h3 class="c-productCard__subTitleEn c-productCard__subTitleEnPc">Worka SakaroWashed</h3>
+                        <h3 class="c-productCard__subTitleJa c-productCard__subTitleJaPc">エチオピア ウォッシュト</h3>
+                    </div>
+                </div>
+                <div class="c-productCard--detailBottom">
+                    <div class="c-productCard--detail__description c-productCard--detail__descriptionPc">
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">風　味</dt>
+                            <dd class="c-productCard--detail__descriptionText">レモン、ティーライク、フローラル、ベルガモット、ジンジャー</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">焙　煎</dt>
+                            <dd class="c-productCard--detail__descriptionText">浅煎り</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">国　名</dt>
+                            <dd class="c-productCard--detail__descriptionText">エチオピア</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">地　域</dt>
+                            <dd class="c-productCard--detail__descriptionText">ゲデオ県ゲデブ郡ウォルカ</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">生産者</dt>
+                            <dd class="c-productCard--detail__descriptionText">地域の小生産者(代表イェスフ氏)</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">標　高</dt>
+                            <dd class="c-productCard--detail__descriptionText">1993-1999m</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">品　種</dt>
+                            <dd class="c-productCard--detail__descriptionText">原生品種</dd>
+                        </dl>
+                        <dl>
+                            <dt class="c-productCard--detail__descriptionTitle">精　製</dt>
+                            <dd class="c-productCard--detail__descriptionText">水洗式 （ Fully Washed）</dd>
+                        </dl>
+                    </div>
+                    <div class="c-productCard--detailRight">
+                        <div class="c-productCard--detail__prices">
+                            <div class="c-productCard--detail__price">
+                                <div class="c-productCard--detail__weight">100g</div>
+                                <h2 class="c-productCard--detail__priceEn">¥1,300</h2>
+                                <p class="c-productCard--detail__priceJa">(税込)</p>
+                            </div>
+                            <div class="c-productCard--detail__price">
+                                <div class="c-productCard--detail__weight">100g</div>
+                                <h2 class="c-productCard--detail__priceEn">¥1,300</h2>
+                                <p class="c-productCard--detail__priceJa">(税込)</p>
+                            </div>
+                            <p>送料が別途¥500かかります</p>
+                        </div>
+                        <div class="c-productCard--detail__content">
+                            <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感。りとジンジャーのような清涼感。</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="c-SubBtnSp c-productCard--close">close</a>
+                <div class="c-productCard--detail__img c-productCard--detail__imgPc">
+                    <img src="img/Area_Ethiopia_guji.jpg" alt="エチオピア ウォッシュトの写真">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+@charset 'UTF-8';
+
+
+
+/*
+Aboutページのスタイル
+*/
+
+/* .p-about__img {
+    height: 26.5rem;
+    width: 100vw;
+    margin-inline: -2.4rem;
+    margin-top: 2.4rem;
+} */
+
+/* .p-about__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      object-position: top;
+} */
+
+/* パララックス */
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* height: 50dvh; */
+    /* 画面の半分 */
+}
+
+
+.img-section-02 {
+    /* background-image: url('/img/Top_man_portrait_PC.jpg'); */
+    background-image: url('/img/Pattern__new0564_m_new05644.svg');
+    background-repeat: repeat;
+    background-size: 10rem auto;
+
+    /* background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten; */
+}
+
+.p-aboutCareer {
+    /* padding-block: 6rem; */
+    height: 50rem;
+
+    margin-inline: -2.4rem;
+    margin-top: 2.4rem;
+    padding-inline: 2.4rem;
+    /* padding-block:auto ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-aboutCareer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+}
+
+.p-aboutCareer__inner {
+    background-image: url(../img/Pattern_groovepaper.png);
+    padding: 2.4rem;
+}
+
+.p-aboutCareer__text {
+    margin-top: 2rem;
+}
+
+.p-aboutCareer__text p {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+
+.p-aboutCommit {
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    margin-inline: -2.4rem;
+    margin-bottom: -10rem;
+    width: 100vw;
+    background-color: var(--base-color);
+    padding-inline: 2.4rem;
+}
+
+
+
+.p-aboutCommitDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 4rem;
+}
+
+.p-aboutCommitDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-aboutCommitDetail__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.p-aboutCommitDetail__titleJa {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.p-aboutCommitDetail__titleEn {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.p-aboutCommitDetail__text {
+    /* padding: 1.2rem 2.4rem 2.4rem 2.4rem; */
+    padding-block: 1.2rem 2.4rem;
+}
+
+
+.p-aboutCommitDetail__text::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    margin-bottom: 1.2rem;
+}
+
+.p-aboutCommitDetail__text p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.p-aboutCommitDetail__img {
+    max-width: 34.5rem;
+    width: 100%;
+    max-height: 20.5rem;
+}
+
+.p-aboutCommitDetail__img img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:76.8rem) {
+
+    /* .p-about__img {
+        margin-inline: -12.4rem;
+        height: 40.5rem;
+    } */
+
+    .img-section-02 {
+        height: 40.5rem;
+        width: 100vw;
+
+        margin-inline: -12.4rem;
+        margin-top: 2.4rem;
+    }
+
+    .p-aboutCareer {
+        /* padding-block: 8rem; */
+        margin-inline: -12.4rem;
+        margin-top: 2.4rem;
+        padding-inline: 12.4rem;
+    }
+
+    .p-aboutCareer__text p {
+        font-size: 1.6rem;
+        line-height: 3.6rem;
+    }
+
+    .p-aboutCommit {
+        padding-top: 8rem;
+        margin-inline: -12.4rem;
+        padding-inline: 12.4rem;
+        padding-bottom: 14rem;
+        margin-bottom: -14rem;
+    }
+
+    .p-aboutCommitDetails {
+        margin-top: 8rem;
+        gap: 16.2rem;
+    }
+
+    .p-aboutCommitDetail {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .p-aboutCommitDetail:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+
+    .p-aboutCommitDetail__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+
+    .p-aboutCommitDetail__title {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .p-aboutCommitDetail:nth-child(2) .p-aboutCommitDetail__title {
+        margin-left: 15%;
+    }
+
+    .p-aboutCommitDetail__titleJa {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin-bottom: 0;
+        font-feature-settings: "palt";
+    }
+
+    .p-aboutCommitDetail__titleEn {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    /* .p-aboutCommitDetail__text {
+        padding-block: 0;
+     width: 100%;
+    } */
+
+    .p-aboutCommitDetail__text p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        text-align: start;
+        margin-right: 15%;
+    }
+
+    .p-aboutCommitDetail:nth-child(2) .p-aboutCommitDetail__text p {
+        margin-right: 0%;
+        margin-left: 15%;
+    }
+
+    /* 最初は止めておく、または 0 の状態にする */
+    .p-aboutCommitDetail__text::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: var(--main-color);
+        margin-bottom: 1.4rem;
+        transform: scaleX(0);
+        /* 最初は長さゼロ */
+        transform-origin: left;
+        transition: transform 2s ease;
+        /* animationの代わりにtransitionを使うと楽です */
+    }
+
+    /* 💡 JSで .is-active がついた瞬間に伸びる */
+    .p-aboutCommitDetail__text.is-active::before {
+        transform: scaleX(1);
+    }
+
+    /* 2番目の向き指定はそのまま */
+    .p-aboutCommitDetail:nth-child(2) .p-aboutCommitDetail__text::before {
+        transform-origin: right;
+    }
+
+    .p-aboutCommitDetail__img {
+        min-width: 34.5rem;
+        max-width: 51.1rem;
+        min-height: 20.5rem;
+        max-height: 30.3rem;
+    }
+
+    /* 左から来る要素（テキストなど）の初期状態 */
+    .js__aboutCommitDetail__left {
+        opacity: 0;
+        transform: translateX(-12.9rem) blur(0.2rem) brightness(110%);
+        /* JSが動くまではこの状態で待機 */
+    }
+
+    /* 右から来る要素（画像など）の初期状態 */
+    .js__aboutCommitDetail__right {
+        opacity: 0;
+        transform: translateX(12.9rem) blur(0.2rem) brightness(110%);
+    }
+
+
+
+
+
+
+
+
+
+}

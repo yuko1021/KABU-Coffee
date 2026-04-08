@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KABU Coffee</title>
+
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/script.js" defer></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=LINE+Seed+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="l-header">
+        <!-- logo -->
+        <h1 class="l-header__logo">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav.svg">
+                    <img src="img/logo_nav_2line.svg" alt="Kabu Coffee logo">
+                </picture>
+            </a>
+        </h1>
+
+        <!-- 【SP】ハンバーガーメニューボタン -->
+        <button class="l-header__navBtn" type="button">
+            <span></span>
+        </button>
+
+        <!-- ナビゲーション -->
+        <nav class="l-header__nav">
+            <!-- 【SP】クローズボタン -->
+            <button class="l-header__navClose" type="button"></button>
+            <ul class="l-header__navList">
+                <li class="l-header__navItem"><a href="index.html">Home</a></li>
+                <li class="l-header__navItem"><a href="beans.html">Beans</a></li>
+                <li class="l-header__navItem"><a href="about.html">About</a></li>
+                <li class="l-header__navItem"><a href="contact.html">Contact</a></li>
+                <li class="l-header__navItem"><a href="https://kabucoffee.base.shop/">Store</a></li>
+                <li class="l-header__navItem">
+                    <a href="store.html" class="l-header__navLink l-header__instagram">Instagram</a>
+                </li>
+            </ul>
+            <p class="l-header__navLogo">
+                <img src="img/logo_nav_2line.svg" alt="KABU logo">
+            </p>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="l-container">
+            <div>
+                <h2 class="c-sectionTitleSp c-sectionTitlePc">
+                    <span class="c-sectionTitleSp__title c-sectionTitlePc__title">About Kabu</span>
+                    <span class="c-sectionTitleSp__subTitle c-sectionTitlePc__subTitle">カブコーヒーについて</span>
+                </h2>
+            </div>
+            <section class="p-aboutCareer parallax-section img-section-02">
+                <!-- <div class="p-about__img">
+                    <img src="img/Top_man_portrait_PC.jpg" alt="店主のポートレート">
+                </div> -->
+                <div class="p-aboutCareer__inner">
+                    <h2 class="c-headingSp c-headingPc">
+                        <span class="c-headingSp__title c-headingPc__title">career</span>
+                        <span class="c-headingSp__subTitle c-headingPc__subTitle">これまでの活動</span>
+                    </h2>
+                    <div class="p-aboutCareer__text">
+                        <p>店主は2001年よりバリスタとしてのキャリアをスタートし、2019年より本格的に焙煎を始めました。<br>
+                            現在は「私立コーヒー小学校」で勤務しながら
+                            「産地や作り手の特徴を味わいで表現したい」と言う思いのもと、<br>独自のコーヒーブランドを運営しています。</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section class="p-aboutCommit">
+                <h2 class="c-headingSp c-headingPc">
+                    <span class="c-headingSp__title c-headingPc__title">commitment</span>
+                    <span class="c-headingSp__subTitle c-headingPc__subTitle">こだわり・理念</span>
+                </h2>
+                <div class="p-aboutCommitDetails">
+                    <div class="p-aboutCommitDetail">
+                        <div class="p-aboutCommitDetail__content js__aboutCommitDetail__left">
+                            <div class="p-aboutCommitDetail__title ">
+                                <h3 class="p-aboutCommitDetail__titleJa">想いをダイレクトに</h3>
+                                <h4 class="p-aboutCommitDetail__titleEn">Commitment</h4>
+                            </div>
+                            <div class="p-aboutCommitDetail__text">
+                                <p>全ての工程に一人で行うからこそ、お届けしたい「味」に一切の妥協がありません。
+                                    目指す理想のコーヒーを、そのままの純度でお楽しみいただけます。</p>
+                            </div>
+                        </div>
+                        <div class="p-aboutCommitDetail__img js__aboutCommitDetail__right">
+                            <img src="img/About_package.png" alt="コーヒー豆のパッケージ">
+                        </div>
+                    </div>
+
+                    <div class="p-aboutCommitDetail">
+                        <div class="p-aboutCommitDetail__content
+                        js__aboutCommitDetail__right">
+                            <div class="p-aboutCommitDetail__title">
+                                <h3 class="p-aboutCommitDetail__titleJa">「いま」この瞬間の香りを届ける</h3>
+                                <h4 class="p-aboutCommitDetail__titleEn">Always Fresh</h4>
+                            </div>
+                            <div class="p-aboutCommitDetail__text">
+                                <p>封を開けた瞬間に広がる驚きの香りを大切にしています。作り置きはせず、
+                                    焙煎はオーダーが入ってから行うので最高の状態でご提供することができます。。</p>
+                            </div>
+                        </div>
+                        <div class="p-aboutCommitDetail__img js__aboutCommitDetail__left">
+                            <img src="img/About_ roasting.png" alt="豆の焙煎の様子">
+                        </div>
+                    </div>
+
+                    <div class="p-aboutCommitDetail">
+                        <div class="p-aboutCommitDetail__content js__aboutCommitDetail__left">
+                            <div class="p-aboutCommitDetail__title">
+                                <h3 class="p-aboutCommitDetail__titleJa">「最高の一杯」をご一緒に</h3>
+                                <h4 class="p-aboutCommitDetail__titleEn">Coffee Consulting</h4>
+                            </div>
+                            <div class="p-aboutCommitDetail__text">
+                                <p>これまでにコーヒの勉強会の講師や新規開店を控える店舗へ出向き、
+                                    ノウハウを提供するコンサルタントの様な業務も経験しています。美味しい淹れ方や道具の相談まで、理想のコーヒーライフを幅広くお手伝いすることができます。</p>
+                            </div>
+                        </div>
+                        <div class="p-aboutCommitDetail__img
+                        js__aboutCommitDetail__right">
+                            <img src="img/About_latte.png" alt="ラテアートの様子">
+                        </div>
+                    </div>
+            </section>
+
+
+
+        </div>
+
+
+    </main>
+
+    <div class="p-topItems__img">
+        <img src="img/Footer_field.jpg" alt="コーヒー畑の様子">
+    </div>
+
+    <footer class="l-footer">
+
+        <div class="l-footer__content">
+            <div class="l-footer__logo">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav_2line.svg">
+                    <img src="img/logo_nav.svg" alt="Kabu Coffee logo">
+                </picture>
+            </div>
+            <nav class="l-footer__nav">
+                <dl class="l-footer__navList">
+                    <dt><a href="index.html">Home</a></dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Information</a></dd>
+                    <dd><a href="#">Beans</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="beans.html">Beans</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="about.html">About</a></dt>
+                    <dd><a href="#">Commitment</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="contact.html">Contact</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="store.html">Store</a></dt>
+                </dl>
+                <div class="l-footer__contact">
+                    <div>
+                        <p class="l-footer__contactTitle">お問い合わせ</p>
+                        <ul class="l-footer__contactDetail">
+                            <li><a href="#">address</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <small class="l-footer__copyright">
+            Copyright &copy; KABU coffee.
+        </small>
+    </footer>
+
+
+
+    <!-- サークルのアニメーション -->
+    <div class="c-circle-text">
+
+        <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+            <text>
+                <textPath href="#circlePath">
+                    HOME ・HOME ・ HOME ・HOME・
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <!-- 問い合わせとカートボタン -->
+    <div class="c-sticky-nav">
+
+        <a href="index.html" class="c-icon-btn">
+            <img src="img/icon_home-fill-16.svg" alt="ホーム" class="c-icon-btn__img">
+        </a>
+    </div>
+</body>
+
+</html>

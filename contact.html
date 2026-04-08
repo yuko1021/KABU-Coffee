@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KABU Coffee</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css"> -->
+
+    <script src="js/script.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script> -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=LINE+Seed+Sans:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="l-header">
+        <!-- logo -->
+        <h1 class="l-header__logo">
+            <a href="index.html">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav.svg">
+                    <img src="img/logo_nav_2line.svg" alt="Kabu Coffee logo">
+                </picture>
+            </a>
+        </h1>
+
+        <!-- 【SP】ハンバーガーメニューボタン -->
+        <button class="l-header__navBtn" type="button">
+            <span></span>
+        </button>
+
+        <!-- ナビゲーション -->
+        <nav class="l-header__nav">
+            <!-- 【SP】クローズボタン -->
+            <button class="l-header__navClose" type="button"></button>
+            <ul class="l-header__navList">
+                <li class="l-header__navItem"><a href="index.html">Home</a></li>
+                <li class="l-header__navItem"><a href="beans.html">Beans</a></li>
+                <li class="l-header__navItem"><a href="about.html">About</a></li>
+                <li class="l-header__navItem"><a href="contact.html">Contact</a></li>
+                 <li class="l-header__navItem"><a href="https://kabucoffee.base.shop/">Store</a></li>
+                <li class="l-header__navItem">
+                    <a href="store.html" class="l-header__navLink l-header__instagram">Instagram</a>
+                </li>
+            </ul>
+            <p class="l-header__navLogo">
+                <img src="img/logo_nav_2line.svg" alt="KABU logo">
+            </p>
+        </nav>
+    </header>
+    <main>
+        <div class="l-container">
+            <section class="p-contact">
+                <h2 class="c-sectionTitleSp c-sectionTitlePc">
+                    <span class="c-sectionTitleSp__title c-sectionTitlePc__title">contact</span>
+                    <span
+                        class="c-sectionTitleSp__subTitle c-sectionTitlePc__subTitle">サンプル注文をご希望の方もこちらのフォームから<br>お申し込みください。</span>
+                </h2>
+
+                <form
+                    action="https://script.google.com/macros/s/AKfycbye1Df48Kaspv2fp74tWk2U1PuE5I8CF43fyTBe02fUevnLuZiwPZXv0NEnU629NhIU/exec"
+                    method="POST">
+                    <dl class="p-contact__form">
+                        <div class="p-contact__formGroup">
+                            <div class="p-contact__formLabel">
+                                <dt><label for="name">お名前</label></dt>
+                                <a href="#" class="c-badge c-badge--small">必須</a>
+                            </div>
+                            <dd><input type="text" id="name" name="name" required placeholder="山田太郎"></dd>
+                        </div>
+                        <div class="p-contact__formGroup">
+                            <div class="p-contact__formLabel">
+                                <dt><label for="kana">フリガナ</label></dt>
+                                <a href="#" class="c-badge c-badge--small">必須</a>
+                            </div>
+                            <dd><input type="text" id="kana" name="kana" required placeholder="ヤマダタロウ"></dd>
+                        </div>
+                        <div class="p-contact__formGroup">
+                            <div class="p-contact__formLabel">
+                                <dt><label for="email">メールアドレス</label></dt>
+                                <a href="#" class="c-badge c-badge--small">必須</a>
+                            </div>
+                            <dd><input type="email" id="email" name="email" required placeholder="example@example.com">
+                            </dd>
+                        </div>
+                        <div class="p-contact__formGroup">
+                            <div class="p-contact__formLabel">
+                                <dt><label for="address">住所</label></dt>
+                            </div>
+                            <dd>
+                                <div class="p-contact__address">
+                                    <div class="p-contact__zipArea">
+                                        <input type="text" name="zip1" id="zip" class="c-input" placeholder="000">
+                                        <span class="p-contact__separator">─</span>
+                                        <input type="text" name="zip2" class="c-input" placeholder="0000">
+                                    </div>
+
+                                    <input type="text" name="address1" class="c-input" placeholder="都道府県・市区町村">
+                                    <input type="text" name="address2" class="c-input" placeholder="番地・ビル名">
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="p-contact__formGroup p-contactFrom__beans">
+                            <div class="p-contact__formLabel">
+                                <h3 class="p-contactFrom__beansTitle">サンプルのお豆</h3>
+                            </div>
+
+                            <div class="p-contactFrom__beansSelect">
+                                <p>※こちらはサンプル注文される方のみ</p>
+                                <div id="selected-beans-list" class="selected-beans-list">
+                                </div>
+                                <input type="hidden" name="bean" id="real-bean-input" value="">
+                                <div class="p-contactFrom__beansButton">
+                                    <a href="#beans-modalBeans" class="c-btn js-modalBeans-open">サンプルの追加</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-contact__formGroup">
+                            <div class="p-contact__formLabel">
+                                <dt><label for="message">メッセージ</label></dt>
+                            </div>
+                            <dd><textarea id="message" name="message" rows="5" placeholder="メッセージ"></textarea></dd>
+                        </div>
+                    </dl>
+                    <!-- <a href="#" class="c-btn c-btn--orange" type="sub">送信</a> -->
+                    <button class="c-btn c-btn--orange p-contact__send" type="submit">送信</button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <div class="p-topItems__img">
+        <img src="img/Footer_field.jpg" alt="コーヒー畑の様子" type>
+    </div>
+    <footer class="l-footer">
+
+        <div class="l-footer__content">
+            <div class="l-footer__logo">
+                <picture>
+                    <source media="(min-width: 76.8rem)" srcset="img/logo_nav_2line.svg">
+                    <img src="img/logo_nav.svg" alt="Kabu Coffee logo">
+                </picture>
+            </div>
+            <nav class="l-footer__nav">
+                <dl class="l-footer__navList">
+                    <dt><a href="index.html">Home</a></dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Information</a></dd>
+                    <dd><a href="#">Beans</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="beans.html">Beans</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="about.html">About</a></dt>
+                    <dd><a href="#">Commitment</a></dd>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="contact.html">Contact</a></dt>
+                </dl>
+                <dl class="l-footer__navList">
+                    <dt><a href="store.html">Store</a></dt>
+                </dl>
+                <div class="l-footer__contact">
+                    <div>
+                        <p class="l-footer__contactTitle">お問い合わせ</p>
+                        <ul class="l-footer__contactDetail">
+                            <li><a href="#">address</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <small class="l-footer__copyright">
+            Copyright &copy; KABU coffee.
+        </small>
+    </footer>
+
+
+
+    <!-- モーダル -->
+    <div class="l-modalBeans" id="js-modalBeans">
+        <div class="l-modalBeans__inner">
+            <button class="l-modalBeans__close" type="button" id="js-modalBeans-close"></button>
+
+            <div class="l-modalBeans__content">
+                <h2 class="c-headingSp">
+                    <span class="c-headingSp__title">ITEMS</span>
+                    <span class="c-headingSp__subTitle">「サンプルの追加」後に「選択完了」して下さい。</span>
+                </h2>
+
+                <div class="l-modalBeans__lists">
+                    <div class="l-modalBeans__list">
+                        <div class="c-photoCard c-photoCard--thin l-modalBeans__card">
+                            <div class="c-photoCard__badge">
+                                <p>Light<br>Roast</p>
+                            </div>
+                            <div class="  c-photoCard__img">
+                                <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                            </div>
+                            <div class="c-photoCard__title">
+                                <h2 class="c-photoCard__mainTitle">Ethiopia</h2>
+                                <h3 class="c-photoCard__subTitleEn">Worka SakaroWashed</h3>
+                                <h3 class="c-photoCard__subTitleJa">エチオピア ウォッシュト</h3>
+                            </div>
+                            <div class="c-photoCard__flavors">
+                                <div class="c-photoCard__flavor">
+                                    <p>Lemon</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Tea-like</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Floral</p>
+                                </div>
+                            </div>
+                            <div class="c-photoCard__content">
+                                <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。</p>
+                            </div>
+                            <p class="c-photoCard__weight">100g/200g</p>
+                        </div>
+                        <a href="#" class="c-checkBtn l-modalBeans__cardButton">
+                            <img src="img/Icon_entypo_plus.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-modalBeans__list">
+                        <div class="c-photoCard c-photoCard--thin l-modalBeans__card">
+                            <div class="c-photoCard__badge">
+                                <p>Light<br>Roast</p>
+                            </div>
+                            <div class="  c-photoCard__img">
+                                <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                            </div>
+                            <div class="c-photoCard__title">
+                                <h2 class="c-photoCard__mainTitle">Ethiopia</h2>
+                                <h3 class="c-photoCard__subTitleEn">Worka SakaroWashed</h3>
+                                <h3 class="c-photoCard__subTitleJa">エチオピア ウォッシュト</h3>
+                            </div>
+                            <div class="c-photoCard__flavors">
+                                <div class="c-photoCard__flavor">
+                                    <p>Lemon</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Tea-like</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Floral</p>
+                                </div>
+                            </div>
+                            <div class="c-photoCard__content">
+                                <p>店主が大好きなエチオピア ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。ほんのり花のような香りとジンジャーのような清涼感があります。</p>
+                            </div>
+                            <p class="c-photoCard__weight">100g/200g</p>
+                        </div>
+                        <a href="#" class="c-checkBtn l-modalBeans__cardButton">
+                            <img src="img/Icon_entypo_plus.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="l-modalBeans__list">
+                        <div class="c-photoCard c-photoCard--thin l-modalBeans__card">
+                            <div class="c-photoCard__badge">
+                                <p>Light<br>Roast</p>
+                            </div>
+                            <div class="  c-photoCard__img">
+                                <img src="img/Top_coffeeBag.png" alt="コーヒーの袋">
+                            </div>
+                            <div class="c-photoCard__title">
+                                <h2 class="c-photoCard__mainTitle">Ethiopia</h2>
+                                <h3 class="c-photoCard__subTitleEn">Worka SakaroWashed</h3>
+                                <h3 class="c-photoCard__subTitleJa">エチオピア ウォッシュト</h3>
+                            </div>
+                            <div class="c-photoCard__flavors">
+                                <div class="c-photoCard__flavor">
+                                    <p>Lemon</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Tea-like</p>
+                                </div>
+                                <div class="c-photoCard__flavor">
+                                    <p>Floral</p>
+                                </div>
+                            </div>
+                            <div class="c-photoCard__content">
+                                <p>店主が大好きなエチオピア
+                                    ウォッシュト。明るい柑橘系の酸味に紅茶のような軽い飲み口、ほんのり花のような香りとジンジャーのような清涼感があります。ほんのり花のような香りとジンジャーのような清涼感があります。
+                                </p>
+                            </div>
+                            <p class="c-photoCard__weight">100g/200g</p>
+                        </div>
+                        <a href="#" class="c-checkBtn l-modalBeans__cardButton">
+                            <img src="img/Icon_entypo_plus.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="l-modalBeans__footer">
+
+                    <a href="#" class="c-SubBtnSp c-modal__close-btn" id="js-modalBeans-close-footer">完了</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- サークルのアニメーション -->
+    <div class="c-circle-text">
+
+        <svg viewBox="0 0 100 100">
+            <path id="circlePath" d="M 50, 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+            <text>
+                <textPath href="#circlePath">
+                    HOME ・HOME ・ HOME ・HOME・
+                </textPath>
+            </text>
+        </svg>
+    </div>
+    <!-- 問い合わせとカートボタン -->
+    <div class="c-sticky-nav">
+
+        <a href="index.html" class="c-icon-btn">
+            <img src="img/icon_home-fill-16.svg" alt="ホーム" class="c-icon-btn__img">
+        </a>
+    </div>
+</body>

@@ -1,0 +1,98 @@
+@charset 'UTF-8';
+
+.l-containerNews{
+    padding-bottom: 0;
+}
+
+/* .p-news__img {
+    height: 26.5rem;
+    width: 100vw;
+    margin-inline: -2.4rem;
+    margin-top: 2.4rem;
+}
+
+.p-news__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+/* パララックス */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img-section-02 {
+  /* background-image: url('/img/Footer_mountain.jpg'); */
+    background-image: url('/img/About_latte.png');
+
+     /* background-image: url('/img/Pattern__new0433_m_new04334.svg');
+    background-repeat: repeat;
+    background-size: 10rem auto; */
+
+  /* background-color: rgba(255, 255, 255, 0.5); 
+  background-blend-mode: lighten; 
+  background-size: cover; */
+      margin-inline: -2.4rem;
+      margin-top: 2.4rem;
+      padding: 4rem  2.4rem 6rem 2.4rem;
+}
+
+
+
+
+
+.p-news__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    margin-block: 0 6rem;
+
+          width:100% ;
+}
+
+.p-news__pageNum {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.p-news__pageNum a {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:76.8rem) {
+    /* .p-news__img {
+        height: 40.5rem;
+        margin-inline: -12.4rem;
+        margin-top: 4rem;
+    } */
+
+    .img-section-02 {
+      margin-inline: -12.4rem;
+      margin-top: 4rem;
+      padding: 8rem  12.4rem 12rem 12.4rem;
+}
+
+    .p-news__cards {
+        gap: 3.2rem;
+        /* margin-block: 10rem; */
+        width: 100%;
+    }
+
+    .p-news__pageNum {
+        font-size: 2rem;
+    }
+}
