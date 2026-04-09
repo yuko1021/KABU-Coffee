@@ -8,6 +8,10 @@
 トップページのスタイル
 */
 
+.c-badge--dark{
+ background-color: var(--sub-color);
+ color: var(--white);
+}
 
 
 

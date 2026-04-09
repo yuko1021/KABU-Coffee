@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+/* .c-badge--dark{
+ background-color: var(--sub-color);
+ color: var(--white);
+} */
 
 
 /* shakeアニメーション */
@@ -435,6 +439,10 @@
     transition: 0.3s;
 }
 
+
+
+
+
 .c-checkBtn img {
     width: 3.4rem;
     height: 3.4rem;
@@ -834,9 +842,17 @@
     margin-block: 2rem;
 }
 
+
+/* 440行目付近を修正 */
 .c-photoCard__mainTitle {
     font-size: 2rem;
     font-weight: 700;
+    
+    /* ↓ここを追記：他の場所からの width: 0 や hidden を強制解除します */
+    display: block !important;
+    width: auto !important;
+    visibility: visible !important;
+    overflow: visible !important;
 }
 
 .c-photoCard__subTitleEn {
@@ -1082,8 +1098,8 @@
 
     appearance: none;
     /* ブラウザ標準の見た目をリセット */
-    background: rgba(0, 0, 0, 0.5);
-    background: rgba(0, 50, 28, 0.4);
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(255, 255, 255, 0.3);
     font-size: 1.6rem;
     color: var(--white);
     border: none;

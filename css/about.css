@@ -48,7 +48,6 @@ Aboutページのスタイル
     margin-inline: -2.4rem;
     margin-top: 2.4rem;
     padding-inline: 2.4rem;
-    /* padding-block:auto ; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +180,7 @@ Aboutページのスタイル
         margin-top: 2.4rem;
         padding-inline: 12.4rem;
     }
+
 
     .p-aboutCareer__text p {
         font-size: 1.6rem;

@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-.l-containerNews{
+.l-containerNews {
     padding-bottom: 0;
 }
 
@@ -19,26 +19,26 @@
 
 /* パララックス */
 .parallax-section {
-  background-attachment: fixed;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .img-section-02 {
-  /* background-image: url('/img/Footer_mountain.jpg'); */
+    /* background-image: url('/img/Footer_mountain.jpg'); */
     background-image: url('/img/About_latte.png');
 
-     /* background-image: url('/img/Pattern__new0433_m_new04334.svg');
+    /* background-image: url('/img/Pattern__new0433_m_new04334.svg');
     background-repeat: repeat;
     background-size: 10rem auto; */
 
-  /* background-color: rgba(255, 255, 255, 0.5); 
+    /* background-color: rgba(255, 255, 255, 0.5); 
   background-blend-mode: lighten; 
   background-size: cover; */
-      margin-inline: -2.4rem;
-      margin-top: 2.4rem;
-      padding: 4rem  2.4rem 6rem 2.4rem;
+    margin-inline: -2.4rem;
+    margin-top: 2.4rem;
+    padding: 4rem 2.4rem 6rem 2.4rem;
 }
 
 
@@ -52,7 +52,7 @@
     gap: 1.6rem;
     margin-block: 0 6rem;
 
-          width:100% ;
+    width: 100%;
 }
 
 .p-news__pageNum {
@@ -81,15 +81,17 @@
     } */
 
     .img-section-02 {
-      margin-inline: -12.4rem;
-      margin-top: 4rem;
-      padding: 8rem  12.4rem 12rem 12.4rem;
-}
+        margin-inline: -12.4rem;
+        margin-top: 4rem;
+        padding: 8rem 12.4rem 12rem 12.4rem;
+    }
 
     .p-news__cards {
         gap: 3.2rem;
         /* margin-block: 10rem; */
         width: 100%;
+        max-width: 103.2rem;
+        margin-inline: auto;
     }
 
     .p-news__pageNum {
