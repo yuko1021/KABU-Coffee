@@ -57,108 +57,109 @@
 
 /* (固定)問い合わせとカートボタン*/
 .c-sticky-nav {
-  display: none;
+    display: none;
 }
 
 /* (固定)サークルアニメーション */
 .c-circle-text {
-  display: none;
+    display: none;
 }
 
 @media screen and (min-width:76.8rem) {
+
     /* (固定)問い合わせとカートボタン*/
-  /* ボタンをまとめるコンテナ（画面右下に固定する場合） */
-  .c-sticky-nav {
-    position: fixed;
-    right: 7.2rem;
-    bottom: 7.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    /* ボタン同士の間隔 */
-    z-index: 100;
-  }
+    /* ボタンをまとめるコンテナ（画面右下に固定する場合） */
+    .c-sticky-nav {
+        position: fixed;
+        right: 7.2rem;
+        bottom: 7.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        /* ボタン同士の間隔 */
+        z-index: 100;
+    }
 
-  /* ボタン本体 */
-  .c-icon-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* ボタン本体 */
+    .c-icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-    /* 正円にするための設定 */
-    width: 56px;
-    height: 56px;
-    background-color: var(--main-color);
-    /* 濃いグリーン */
-    border-radius: 50%;
+        /* 正円にするための設定 */
+        width: 56px;
+        height: 56px;
+        background-color: var(--main-color);
+        /* 濃いグリーン */
+        border-radius: 50%;
 
-    /* 影とアニメーション */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease;
-    text-decoration: none;
-  }
+        /* 影とアニメーション */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
 
-  /* アイコン画像 */
-  .c-icon-btn__img {
-    width: 2rem;
-    height: auto;
-    /* 白いアイコンなら以下は不要ですが、黒い画像を白くしたい場合は filter を使えます */
-    filter: brightness(0) invert(1);
-    /* animation: rotate-circle 10s linear infinite; */
-  }
+    /* アイコン画像 */
+    .c-icon-btn__img {
+        width: 2rem;
+        height: auto;
+        /* 白いアイコンなら以下は不要ですが、黒い画像を白くしたい場合は filter を使えます */
+        filter: brightness(0) invert(1);
+        /* animation: rotate-circle 10s linear infinite; */
+    }
 
-  /* ホバー時の動き */
-  .c-icon-btn:hover {
-    background-color: #1a4d31;
-    /* 少し明るい緑へ */
-    /* transform: translateY(-3px); */
-    /* 軽く浮かせる */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  }
+    /* ホバー時の動き */
+    .c-icon-btn:hover {
+        background-color: #1a4d31;
+        /* 少し明るい緑へ */
+        /* transform: translateY(-3px); */
+        /* 軽く浮かせる */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
 
-  /* サークルアニメーション */
-  .c-circle-text {
+    /* サークルアニメーション */
+    .c-circle-text {
 
-    position: fixed;
-    /* 画面の右下に固定する場合 */
-    bottom: 5rem;
-    right: 5rem;
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
-    gap: 2.8rem;
-  }
+        position: fixed;
+        /* 画面の右下に固定する場合 */
+        bottom: 5rem;
+        right: 5rem;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+    }
 
-  .c-circle-text svg {
-    width: 10rem;
-    height: 10rem;
-    /* width: 100%;
+    .c-circle-text svg {
+        width: 10rem;
+        height: 10rem;
+        /* width: 100%;
   height: 100%; */
-    /* アニメーションの設定：30秒かけて、一定の速度(linear)で、無限に(infinite) */
-    animation: rotate-circle 30s linear infinite;
-  }
-
-  .c-circle-text text {
-    fill: var(--main-color);
-    font-size: 1.2rem;
-    /* 文字の大きさ */
-    font-weight: 400;
-    letter-spacing: 0.21rem;
-    /* 文字の間隔を少し広げると読みやすい */
-    text-transform: uppercase;
-    /* すべて大文字にする（デザイン的に締まります） */
-  }
-
-  /* 回転のアニメーション */
-  @keyframes rotate-circle {
-    from {
-      transform: rotate(0deg);
+        /* アニメーションの設定：30秒かけて、一定の速度(linear)で、無限に(infinite) */
+        animation: rotate-circle 30s linear infinite;
     }
 
-    to {
-      transform: rotate(360deg);
+    .c-circle-text text {
+        fill: var(--main-color);
+        font-size: 1.2rem;
+        /* 文字の大きさ */
+        font-weight: 400;
+        letter-spacing: 0.21rem;
+        /* 文字の間隔を少し広げると読みやすい */
+        text-transform: uppercase;
+        /* すべて大文字にする（デザイン的に締まります） */
     }
-  }
+
+    /* 回転のアニメーション */
+    @keyframes rotate-circle {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
 
 }
 
@@ -794,7 +795,6 @@
     padding-bottom: 2.4rem;
     position: relative;
     filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 103, 76, 0.05));
-
 }
 
 .c-photoCard:hover {
@@ -847,7 +847,7 @@
 .c-photoCard__mainTitle {
     font-size: 2rem;
     font-weight: 700;
-    
+
     /* ↓ここを追記：他の場所からの width: 0 や hidden を強制解除します */
     display: block !important;
     width: auto !important;
@@ -872,13 +872,14 @@
     align-items: center;
     justify-content: center;
     width: 25rem;
+    white-space: nowrap;
 }
 
 .c-photoCard__flavor {
     background-color: var(--base-color);
     height: 2.7rem;
     width: auto;
-    padding-inline: 1.2rem;
+    padding-inline: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1257,7 +1258,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         /* ★左寄せに戻す */
         gap: 5.5rem;
         /* 日付とタイトルの距離 */
@@ -1279,6 +1280,7 @@
         /* ★右側のエリアを可能な限り広げる */
         min-width: 0;
         /* ★これがないと文字が溢れてpaddingを無視します */
+        max-width: 74.4rem;
     }
 
     .c-news__contentPc,
