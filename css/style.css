@@ -339,9 +339,6 @@
 
 @media screen and (min-width:76.8rem) {
 
-  
-
-
 
 
   .p-top__hero {
@@ -459,8 +456,8 @@
 
   .p-topItems__orders {
     display: flex;
-    flex-direction: row;
-    gap: 6.4rem;
+    /* flex-direction: row; */
+    gap: 3.2rem;
   }
 
   .p-topItems__img {
