@@ -8,9 +8,9 @@
 トップページのスタイル
 */
 
-.c-badge--dark{
- background-color: var(--sub-color);
- color: var(--white);
+.c-badge--dark {
+  background-color: var(--sub-color);
+  color: var(--white);
 }
 
 
@@ -67,7 +67,8 @@
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.9rem;
-  padding-bottom: 0.5em; /* 念のため下に少しだけ余白を作る */
+  padding-bottom: 0.5em;
+  /* 念のため下に少しだけ余白を作る */
   letter-spacing: 0.05em;
   margin-top: 1rem;
   display: block;
@@ -82,24 +83,47 @@
   white-space: nowrap;
   border-right: .1em solid var(--accent-color);
   width: 0;
-  
+
   /* typing: 0から100%まで幅を広げ、戻す動きを入れる
      blink: カーソルの点滅
   */
-  animation: 
+  animation:
     typing 6s steps(20, end) infinite,
     blink .75s step-end infinite;
 }
 
 @keyframes typing {
-  0%, 10% { width: 0; }             /* 溜め（開始） */
-  40%, 60% { width: 100%; }         /* 書いた状態で停止（見せる時間） */
-  90%, 100% { width: 0; }           /* 消す動き */
+
+  0%,
+  10% {
+    width: 0;
+  }
+
+  /* 溜め（開始） */
+  40%,
+  60% {
+    width: 100%;
+  }
+
+  /* 書いた状態で停止（見せる時間） */
+  90%,
+  100% {
+    width: 0;
+  }
+
+  /* 消す動き */
 }
 
 @keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
 }
 
 
@@ -150,6 +174,39 @@
 }
 
 
+/* About画像のアニメーション */
+@media screen and (min-width:76.8rem) {
+
+  /* 最初は透明、かつ下に30px移動させておく */
+  .js-fade-item {
+    opacity: 0;
+    transform: translateY(30px);
+    /* X（横）からY（縦）に変更 */
+    transition: opacity 1.2s ease, transform 1.2s ease;
+  }
+
+  /* JSでこのクラスが付与されたら元の位置（0）に戻る */
+  .js-fade-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* 3枚が順番に浮き上がるようにディレイをかける */
+  .js-fade-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .js-fade-item:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  .js-fade-item:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+
+}
+
+
 
 /* ニュース */
 .p-topNews {
@@ -194,7 +251,7 @@
 
 .img-section-01 {
   background-image: url('../img/About_latte.png');
-       /* background-image: url('/img/Pattern__new0433_m_new04333.svg');
+  /* background-image: url('/img/Pattern__new0433_m_new04333.svg');
     background-repeat: repeat;
     background-size: 10rem auto; */
   /* background-color: rgba(255, 255, 255, 0.5); 

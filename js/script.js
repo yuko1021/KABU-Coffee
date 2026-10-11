@@ -107,6 +107,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// Aboutの画像アニメーション
+document.addEventListener("DOMContentLoaded", function() {
+    const targets = document.querySelectorAll('.js-fade-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 画面に入ったらクラスを追加
+                entry.target.classList.add('is-visible');
+            }
+        });
+    }, {
+        threshold: 0.2 // 20%くらい見えたら実行
+    });
+
+    targets.forEach(target => {
+        observer.observe(target);
+    });
+});
+
 
 // News詳細の表示
 
